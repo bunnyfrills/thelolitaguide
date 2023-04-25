@@ -1,0 +1,256 @@
+/* Google font import */
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+
+html, body, div{
+margin:0;
+cursor: url('../images/uiimg/cursor/hellokitty.cur'), auto;
+}
+
+body:hover {
+    cursor: url('../images/uiimg/cursor/hellokitty.cur'), auto;
+}
+
+a:hover {
+    cursor: url('../images/uiimg/cursor/hellokitty.cur'), auto;
+}
+
+/* https://www.w3schools.com/css/css_margin.asp */
+#container {
+  display: grid;
+  height: 95vh;
+  width: 95vw;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows:  25% 25% 25% 25%;
+/*   grid gap row, column */
+  grid-row-gap: 2.5px;
+  grid-column-gap: 2.5px;
+  padding: 0px;
+  margin: 1.5vh auto;
+  background-image: url('https://lolibrary.global.ssl.fastly.net/images/PAJAMgnqrS52LbBXLlLXd4jWlgpRFz51mSB3HJFl.png');
+}
+
+#headercontainer {
+  font-family: 'Lily Script One', cursive;
+  grid-column: 2 / 3;
+  grid-row: 1 / span 1;
+  height: 100%;
+}
+
+#headerimg {
+  background-color: pink;
+  text-align: center;
+  height: 75%;
+  z-index: -1;
+}
+
+#kumyasbanner {
+  height: 100%;
+  width: 100%;
+}
+
+#headercontainer {
+  background: lightpink;
+}
+
+.navigationbuttons {
+  text-align: center;
+  z-index: 5;
+}
+
+.navigationbuttons li {
+  
+  bottom: 5vh;
+ font-size: 26px;
+  display: inline;
+  padding: 0px 20px 0px 0px;
+}
+
+.navigationbuttons a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigationbuttons a:visited {
+  color: white;
+}
+
+#sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / span 2;
+  background-color: white;
+  text-align: left;
+  padding: 5px;
+  border-radius: 25px;
+  border: dotted black 5px;
+}
+
+#pfp {
+  width: 50%;
+  border-radius: 50%;
+  border: dotted pink 5px;
+}
+
+#bowgif {
+  width: 5%;
+  position: absolute;
+  left: 25vh;
+  top: 33vh;
+}
+
+#maincontent{
+  grid-column: 2 / 3;
+  grid-row: 2 / span 3;
+  text-align: center;
+  overflow: auto;
+  background-image: url('https://media.istockphoto.com/id/1170381664/vector/white-dotted-polka-pattern-lecture-on-white-background-polka-dot-seamless-pattern-background.jpg?s=612x612&w=0&k=20&c=JoJ6GT8dBclF-otOM61HlD2MG7vtDr3y6OibgjFVekc=');
+  
+}
+
+#updates{
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  background-color: pink;
+  text-align: left;
+  padding: 5px;
+  border-radius: 25px;
+  border: dotted black 5px;
+}
+
+#stickers {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  background-color: pink;
+  text-align: center;
+  border-radius: 25px;
+  border: dotted black 5px;
+}
+
+
+img.branditemimg {
+height: 20%;
+  width: 20%;
+ filter: contrast(40%);
+}
+
+img.branditemimg:hover {
+  filter: none;
+}
+
+#honeycake {
+ /* transform: rotate(-10deg); */
+  
+  height: 20%;
+  width: 20%;
+  position: relative;
+  right: 60vh;
+}
+
+#karami {
+ /* transform: rotate(5deg);  */
+  height: 20%;
+  width: 20%;
+  position: relative;
+  bottom:30vh;
+  right: 15vh;
+}
+
+#tamajsk {
+  position: relative;
+  bottom: 75vh;
+  left: 33vh;
+ /* transform: rotate(-10deg); */
+}
+
+/* tool tips */
+
+.tooltip {
+    text-decoration:none;
+    position:relative;
+}
+.tooltip-span {
+    display:none;
+}
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+    width: 140px;
+    background-color: pink;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 7px;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+  line-height: 105%;
+  box-sizing: border-box;
+}
+
+/* tool tips end */
+
+#heartsgif {
+  width: 30%;
+}
+
+/* Grid for tutorials */
+
+#tutorialtopics {
+ display: grid;
+  height: 400px;
+  width: 1050px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:  33% 33% 33%;
+/*   grid gap row, column */
+  grid-row-gap: 2.5px;
+  grid-column-gap: 2.5px;
+  padding: 3px;
+  margin: 1.5vh auto;
+  background-color: yellow;
+}
+
+/* End of grid for tutorials */
+
+#coordbreakdown {
+  height:90%;
+  width: 90%;
+  padding: 15px 3px 0px 3px;
+}
+
+#kumyateasticker {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+/*custom scroll bar */
+/*
+:root {
+  --shadow: pink;
+  --scrollbarBG: red;
+  --thumbBG: white;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px pink;
+}
+
+/* custom scroll bar ends */
+
+#japanesebrandintro {
+  background-color: white;
+  border-radius: 40px;
+  padding: 5px 0px 5px 0px;
+}
+
+#kumyateasticker {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }

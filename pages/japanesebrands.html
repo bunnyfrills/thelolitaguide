@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolita Guide</title>
+    <link rel="stylesheet" a href="../css/style.css">
+    <script src="../javascript/myscript.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <div id="headercontainer">
+          <!-- header image -->
+          <div id="headerimg">
+           <img id="kumyasbanner" src="https://media.discordapp.net/attachments/370019562789273601/1095519311826788403/kumyabanner-01.jpg">
+          </div>
+          
+          <div id="topnav">
+             <ul class="navigationbuttons">
+              
+           <li> <a href="index.html">Home</a>
+              </li> 
+             
+              <li><a href="tutorials.html">Tutorials and Information</a>
+              </li>
+            
+             <li> <a href="japanesebrands.html">Japanese Brands</a>
+                
+              
+               </li>
+           
+             <li> <a href="chinesebrands.html">Chinese Brands </a>
+               
+               
+              
+            </li>
+            
+              <li><a href="otherbrands.html">Other Brands</a>
+                
+                
+              
+                </li>
+            
+            <li><a href="storestoavoid.html">Stores to Avoid</a>
+              
+              
+            
+            </li>
+            </ul>
+          </div>
+          
+        </div>
+        
+        <!-- side bar introduction-->
+        
+        <div id="sidebar">
+          <div>
+            <img id="pfp" src="https://media.discordapp.net/attachments/376191127612555265/1095928916297924678/lulu_pink.jpg">
+            <img id="bowgif" src="https://i.pinimg.com/originals/f7/2a/1c/f72a1cb4c70a0ae5ad99a6d20ff1f7d7.gif">
+          </div>
+
+
+          <div id="intro">
+             <h4>Welcome!</h4>
+            <p>This website was started to help beginner lolitas learn about the fashion.</p>
+            
+          </div>
+          <div id="sidenav">
+            <a href="">About Me</a>
+            <a href="">Contact Me</a>
+          </div>
+        </div>
+        
+
+        <div id="maincontent">
+            <div id="japanesebrandintro">
+                <h3>Japanese Brands</h3>
+                <p>This list contains all Japanese brands I am aware of and will be updated when necessary. Each brand is represented by a release I believe is iconic and/or displays
+                   their current style. Hovering over an image will give information on the brand such as if it is plus size friendly, what style they are usually known for, if they
+                   are defunct, etc.<br>If the page does not load quickly, you can use <a href="textbrandlist.html">this</a> text based list.
+                </p>
+               </div>
+             
+               <div id="brandsgrid">
+
+             <div id="aphoneycake">
+             <a href="https://angelicpretty.com/" class="tooltip">
+               <img  id="honeycake" class="branditemimg" src="../images/brandsiconic/angelicpretty_honeycake.png">
+               <span class="tooltip-span">
+                 <b>Angelic Pretty</b><br>Mostly known for sweet lolita, but they sometimes release non-sweet and even non-lolita pieces. Has stores in Japan,
+                       China, the USA, and France. Not known to be plus size friendly.
+               </span>
+           </a>
+               
+             </div>
+             
+             <div id="babykarami">
+               <a class="tooltip" href="https://store.babyssb.co.jp/">
+               <img id="karami" class="branditemimg" src="../images/brandsiconic/baby_babydolljsk.png">
+               <span class="tooltip-span">
+                 <b>Baby the Stars Shine Bright</b><br>Mostly known for sweet lolita, but they sometimes release non-sweet and even non-lolita pieces. Has stores in Japan and the USA. Sometimes release plus-size friendly pieces.
+               </span>
+           </a>
+             </div>
+               
+             <div id="royaltama">
+               <a class="tooltip" href="https://store.babyssb.co.jp/">
+               <img id="tamajsk" class="branditemimg" src="../images/brandsiconic/royalprincessalice_tamawitchgirlparade.png">
+               <span class="tooltip-span">
+                 <b>Royal Princess Alice</b><br>They do everything, mostly gothic. Very busy, detailed prints. Only ships within Japan, does overseas retail with Kuroshiro Kawaii in the US.
+               </span>
+           </a>
+             </div>
+            
+            </div>
+
+          </div>
+
+<div id="updates">
+                <h4 style="text-align:center;">updates</h4>
+                <p> 00/00/00: Site is live!</p>
+              </div>
+              
+              <div id="stickers">
+                <img id="heartsgif" src="https://i.pinimg.com/originals/bd/34/23/bd342367b384dc04c56e595288f3b31e.gif">
+              </div>
+
+              </div>
+        <div id="kumyateasticker">
+            <img src="https://stickershop.line-scdn.net/stickershop/v1/sticker/320009648/android/sticker.png">
+            </div>
+
+
+            <script>
+                var tooltips = document.querySelectorAll('.tooltip span');
+      
+      window.onmousemove = function (e) {
+          var x = (e.clientX + 20) + 'px',
+              y = (e.clientY + 20) + 'px';
+          for (var i = 0; i < tooltips.length; i++) {
+              tooltips[i].style.top = y;
+              tooltips[i].style.left = x;
+          }
+      };
+              </script>
+
+</body>
+</html>
